@@ -1,0 +1,572 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Checkout</title>
+		<meta name="robots" content="noindex, nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Favicon --><link rel="shortcut icon" href="favicon.ico" />
+
+		<!-- CSS ============================================ --><!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/css/font-awesome.css">
+		<link rel="stylesheet" href="static/css/line-awesome.css">
+		<link rel="stylesheet" href="static/css/flaticon.css">
+		<link rel="stylesheet" href="static/css/slick.css">
+		<link rel="stylesheet" href="static/css/slick-theme.css">
+		<link rel="stylesheet" href="static/css/jquery-ui.min.css">
+		<link rel="stylesheet" href="static/css/sal.css">
+		<link rel="stylesheet" href="static/css/magnific-popup.css">
+		<link rel="stylesheet" href="static/css/style.min.css">
+		<link rel="stylesheet" href="static/css/jquery.toast.css">
+		<link rel="stylesheet" href="static/css/common.css">
+		<link rel="stylesheet" type="text/css" href="static/css/line-awesome.css">
+	</head>
+
+		<body class="sticky-header">
+		<header class="header axil-header header-style-5">
+		
+		<div class="axil-header-top">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-sm-6 col-12">
+							<div class="header-top-dropdown">
+								<div class="dropdown"><button class="dropdown-toggle" type="button"
+										data-bs-toggle="dropdown" aria-expanded="false">English
+
+
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">English</a></li>
+										<!-- 		<li><a class="dropdown-item" href="#">Arabic</a></li>
+								<li><a class="dropdown-item" href="#">Spanish</a></li> -->
+									</ul>
+								</div>
+								<div class="dropdown"><button class="dropdown-toggle" type="button"
+										data-bs-toggle="dropdown" aria-expanded="false">USD </button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">USD</a></li>
+										<!-- <li><a class="dropdown-item" href="#">AUD</a></li>
+								<li><a class="dropdown-item" href="#">EUR</a></li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 col-12">
+							<div class="header-top-link">
+								<ul class="quick-link">
+									<li class="SignIn"><a href="login">Sign In</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- Start Mainmenu Area -->
+			<div id="axil-sticky-placeholder"></div>
+			<div class="axil-mainmenu">
+				<div class="container">
+					<div class="header-navbar">
+						<div class="header-brand"><a href="index"><img src="static/image/logo.png" class="logo"
+									alt="Site Logo"></a></div>
+						<div class="header-main-nav"><!-- Start Mainmanu Nav -->
+							<nav class="mainmenu-nav"><button class="mobile-close-btn mobile-nav-toggler"><i
+										class="fas fa-times"></i></button>
+								<div class="mobile-nav-brand">
+
+									<div class="header-action">
+										<ul class="action-list">
+											<li class="axil-search d-xl-block ">
+												<input type="search" class="placeholder product-search-input"
+													name="search" id="livesearch2" onblur="fnSearch(2)" value=""
+													maxlength="40" placeholder="Product Search" autocomplete="off">
+												<button type="submit" class="icon wooc-btn-search"><i
+														class="flaticon-magnifying-glass"></i></button>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<ul class="mainmenu">
+									<li class="menu-item-has-children"><a href="index">Home
+										</a>
+									</li>
+
+									<li class="menu-item-has-children  main-menu-min">
+										<span class="title" href="#">
+											<a href="./shop-list" style="font-weight: bold;">Shop</a>
+											<a class="arrow" href="javascript:void(0);">
+												<i class="las la-angle-down"></i>
+											</a>
+										</span>
+										<ul class="axil-submenu  mega-menu open">
+
+										</ul>
+									</li>
+
+									<nav class="main-menu">
+										<ul>
+											<li><a href="shop-list">Shop <span
+														class="lnr lnr-chevron-down"></span></a>
+												<ul class="mega-menu four-column">
+
+												</ul>
+											</li>
+										</ul>
+									</nav>
+
+
+									<li><a href="blog">Blog</a></li>
+									<li><a href="contact">Contact</a></li>
+								</ul>
+							</nav><!-- End Mainmanu Nav -->
+						</div>
+						<div class="header-action">
+							<ul class="action-list">
+								<li class="axil-search d-xl-block d-none">
+									<input type="search" class="placeholder product-search-input" name="search2"
+										id="livesearch1" onblur="fnSearch(1)" value="" maxlength="40"
+										placeholder="What are you looking for?" autocomplete="off">
+									<button type="submit" class="icon wooc-btn-search"><i
+											class="flaticon-magnifying-glass"></i></button>
+								</li>
+								<li class="axil-search d-xl-none d-block"><a href="javascript:void(0)"
+										class="header-search-icon" title="Search"><i
+											class="flaticon-magnifying-glass"></i></a></li>
+								<!-- <li class="wishlist"><a href="wishlist"><i class="flaticon-heart"></i></a></li> -->
+								<li class="shopping-cart"><a href="#" class="cart-dropdown-btn"><span
+											class="cart-count cart-num">0</span><i
+											class="flaticon-shopping-cart"></i></a></li>
+								<li class="my-account"><a href="javascript:void(0)"><i class="flaticon-person"></i></a>
+									<div class="my-account-dropdown">
+										<ul>
+											<li class="AccountEditAccount cursor-pointer"><a
+													href="./edit-account?id=1">Orders</a>
+											</li>
+											<li class="AccountEditAccount cursor-pointer"><a
+													href="./edit-account?id=2">Account
+													Details</a></li>
+											<li class="AccountEditAccount cursor-pointer"><a
+													href="./edit-account?id=3">Address</a></li>
+											<li class="AccountLogin cursor-pointer"><a href="./login">Login</a>
+											</li>
+											<li class="AccountLogOut cursor-pointer" onclick="fnLogout()"> <a>Log
+													Out</a></li>
+										</ul>
+
+									</div>
+								</li>
+								<li class="axil-mobile-toggle"><button class="menu-btn mobile-nav-toggler"><i
+											class="flaticon-menu-2"></i></button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!-- End Mainmenu Area -->
+			<div class="header-top-campaign">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-xl-5 col-lg-6 col-md-10">
+							<div class="header-campaign-activation axil-slick-arrow arrow-both-side header-campaign-arrow">
+								<div class="slick-slide">
+									<div class="campaign-content"><p>ALL GOODS ARE NOW 30% OFF:<a href="shop-list">GET OFFER</a></p></div>
+								</div>
+								<div class="slick-slide">
+									<div class="campaign-content"><p>ALL GOODS ARE NOW 30% OFF:<a href="shop-list">GET OFFER</a></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- End Header -->
+		<!-- Start Footer Area -->
+		<div class="cart-dropdown" id="cart-dropdown">
+			<div class="cart-content-wrap">
+				<div class="cart-header">
+					<h2 class="header-title">Cart review</h2><button class="cart-close sidebar-close"><i
+							class="fas fa-times"></i></button>
+				</div>
+				<div class="cart-body">
+					<ul class="cart-item-list" id="right_product_list">
+
+
+					</ul>
+				</div>
+				<div class="cart-footer">
+					<h3 class="cart-subtotal"><span class="subtotal-title">Subtotal:</span><span
+							class="subtotal-amount total-amount-goods">$0.00</span></h3>
+					<div class="group-btn"><a href="#" id="cart-view" class="axil-btn btn-bg-primary viewcart-btn">View
+							Cart</a><a href="#" id="checkout-view"
+							class="axil-btn btn-bg-secondary checkout-btn">Checkout</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- Offer Modal Start -->
+
+		<main class="main-wrapper"><!-- Start Checkout Area -->
+			<div class="axil-checkout-area axil-section-gap">
+				<div class="container">
+					<form id="checkout-form">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="axil-checkout-billing">
+									<h4 class="title mb--40">Billing details</h4>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="form-group"><label>First Name <span>*</span></label><input
+													type="text" name="bill_firstname" id="bill_firstname"
+													placeholder="Adam"></div>
+										</div>
+										<div class="col-lg-6">
+											<div class="form-group"><label>Last Name <span>*</span></label><input
+													type="text" placeholder="John" name="bill_lastname"
+													id="bill_lastname"></div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label>Country/ Region <span>*</span></label>
+										<input type="text" name="bill_country" placeholder="Search and find country"
+											id="bill_country" onclick="showOption('bill_country')"
+											oninput="selectSearch(this.value,'country','bill')" autocomplete="off">
+
+										<div class=" select-hidden  bill_country_iop-list">
+
+										</div>
+									</div>
+									<div class="form-group">
+										<label>State / County <span>*</span>
+											<i id="bill_state_spinner" class="spin  las la-spinner"
+												style="display: none;"></i>
+										</label>
+										<input type="text" name="bill_state" placeholder="Search and find state"
+											id="bill_state" oninput="selectSearch(this.value,'state','bill')"
+											autocomplete="off">
+
+										<div class="bill_state_iop-list select-hidden">
+
+										</div>
+									</div>
+
+									<div class="form-group"><label>Town/ City <span>*</span>
+											<i id="bill_city_spinner" class="spin  las la-spinner"
+												style="display: none;"></i>
+										</label>
+										<input type="text" name="bill_city" placeholder="Search and find city"
+											id="bill_city" oninput="selectSearch(this.value,'city','bill')"
+											autocomplete="off">
+										<div class="bill_city_iop-list select-hidden">
+
+										</div>
+									</div>
+
+
+									<div class="form-group"><label>Street Address <span>*</span></label>
+										<input type="text" name="bill_street" id="bill_street"
+											placeholder="House number and street name" value=""
+											autocomplete="address-line1"
+											data-placeholder="House number and street name">
+									</div>
+
+
+									<div class="form-group">
+										<label>Postcode / ZIP <abbr class="required" title="required">*</abbr></label>
+										<input type="text" name="bill_zip" id="bill_zip"
+											placeholder="House number and street name" value=""
+											data-placeholder="House number and street name">
+									</div>
+									<div class="form-group">
+										<label>Phone <abbr class="required" title="required">*</abbr></label>
+										<input type="tel" name="bill_phone" id="bill_phone" placeholder="Phone" value=""
+											autocomplete="tel">
+									</div>
+									<div class="form-group">
+										<label>Email Address <abbr class="required" title="required">*</abbr></label>
+										<input type="email" class="input-text " name="bill_email" id="bill_email"
+											placeholder="" value="" autocomplete="email username">
+									</div>
+
+
+									<div class="form-group different-shippng">
+										<div class="toggle-bar"><a href="javascript:void(0)" class="toggle-btn"><input
+													type="checkbox" id="toggle-checkbox" name="diffrent-ship"><label
+													for="checkbox2">Create an Acount?</label></a></div>
+
+										<div class="toggle-open">
+											<div class="row">
+												<div class="form-group">
+													<label>Account username <abbr class="required"
+															title="required">*</abbr></label>
+													<input class="input-text " id="ship_username">
+												</div>
+
+												<div class="form-group">
+													<label>Account password<abbr class="required"
+															title="required">*</abbr></label>
+													<input type="password" class="input-text " id="ship_password"
+														autocomplete="user password">
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="form-group different-shippng">
+										<div class="toggle-bar"><a href="javascript:void(0)" class="toggle-btn"><input
+													type="checkbox" id="toggle2-checkbox" name="diffrent-ship"><label
+													for="checkbox2">Ship to a different address?</label></a></div>
+										<div class="toggle-open">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="form-group"><label>First Name
+															<span>*</span></label><input type="text"
+															name="ship_firstname" id="ship_firstname"
+															placeholder="Adam"></div>
+												</div>
+												<div class="col-lg-6">
+													<div class="form-group"><label>Last Name
+															<span>*</span></label><input type="text" placeholder="John"
+															name="ship_lastname" id="ship_lastname"></div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label>Country/ Region <span>*</span></label>
+												<input type="text" name="ship_country"
+													placeholder="Search and find country" id="ship_country"
+													onclick="showOption('ship_country')"
+													oninput="selectSearch(this.value,'country','bill')"
+													autocomplete="off">
+
+												<div class=" select-hidden  ship_country_iop-list">
+
+												</div>
+											</div>
+											<div class="form-group">
+												<label>State / County <span>*</span>
+													<i id="ship_state_spinner" class="spin  las la-spinner"
+														style="display: none;"></i>
+												</label>
+												<input type="text" name="ship_state" placeholder="Search and find state"
+													id="ship_state" oninput="selectSearch(this.value,'state','bill')"
+													autocomplete="off">
+
+												<div class="ship_state_iop-list select-hidden">
+
+												</div>
+											</div>
+
+											<div class="form-group"><label>Town/ City <span>*</span>
+													<i id="ship_city_spinner" class="spin  las la-spinner"
+														style="display: none;"></i>
+												</label>
+												<input type="text" name="ship_city" placeholder="Search and find city"
+													id="ship_city" oninput="selectSearch(this.value,'city','bill')"
+													autocomplete="off">
+												<div class="ship_city_iop-list select-hidden">
+
+												</div>
+											</div>
+
+
+											<div class="form-group"><label>Street Address <span>*</span></label>
+												<input type="text" name="ship_street" id="ship_street"
+													placeholder="House number and street name" value=""
+													autocomplete="address-line1"
+													data-placeholder="House number and street name">
+											</div>
+
+
+											<div class="form-group">
+												<label>Postcode / ZIP <abbr class="required"
+														title="required">*</abbr></label>
+												<input type="text" name="ship_zip" id="ship_zip"
+													placeholder="House number and street name" value=""
+													data-placeholder="House number and street name">
+											</div>
+											<div class="form-group">
+												<label>Phone <abbr class="required" title="required">*</abbr></label>
+												<input type="tel" name="ship_phone" id="ship_phone" placeholder="Phone"
+													value="" autocomplete="tel">
+											</div>
+											<div class="form-group">
+												<label>Email Address <abbr class="required"
+														title="required">*</abbr></label>
+												<input type="email" class="input-text " name="ship_email"
+													id="ship_email" placeholder="" value=""
+													autocomplete="email username">
+											</div>
+
+										</div>
+									</div>
+									<div class="form-group"><label>Other Notes(optional)</label><textarea name="remark"
+											id="remark" rows="2"
+											placeholder="Notes about your order, e.g. speacial notes for delivery."></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="axil-order-summery order-checkout-summery">
+									<h5 class="title mb--20">Your Order</h5>
+									<div class="summery-table-wrap">
+										<table class="table summery-table">
+											<thead>
+												<tr>
+													<th>Product</th>
+													<th>Subtotal</th>
+												</tr>
+											</thead>
+											<tbody id="checkout-tbody">
+												<tr class="order-subtotal">
+													<td>Subtotal</td>
+													<td>$<span id="subtotal">0.00</span></td>
+												</tr>
+												<tr class="order-shipping">
+													<td colspan="2">
+														<div class="shipping-amount"><span class="title">Shipping
+																Method</span><span class="amount">$ <span
+																	id="shipping-cost">0.00</span></span></div>
+
+
+														<div class="input-group"><input type="radio" id="radio1"
+																name="shipping" value="0" checked><label
+																for="radio1">Free
+																Shippping</label></div>
+
+														<div class="input-group"><input type="radio" id="radio2"
+																name="shipping" value="1"><label for="radio2">Express
+																Delivery</label></div>
+									</div>
+
+
+									</td>
+									</tr>
+									<tr class="order-total">
+										<td>Total</td>
+										<td class="order-total-amount">$ <span id="settlementMoney">0.00</span></td>
+									</tr>
+									</tbody>
+									</table>
+								</div>
+								<div class="order-payment-method">
+									<h4 class="checkout-title">Payment Method</h4>
+									<div class="summery-table-wrap">
+
+										<div class="payment-options single-payment">
+											<div class="payment-option" id="paypal-option">
+												<input class="payentradio" type="radio" id="paypal" name="payment-method" value="paypal" checked>
+												<label for="paypal">
+													<div class="option-content">
+														<div class="option-icon paypal-icon"></div>
+														<div class="option-text">
+															<span class="option-title">PayPal</span>
+															<span class="option-description">Pay with your PayPal account</span>
+														</div>
+													</div>
+												</label>
+											</div>
+
+											<div class="payment-option" id="credit-card-option">
+												<input class="payentradio" type="radio" id="credit-card" name="payment-method" value="credit-card">
+												<label for="credit-card">
+													<div class="option-content">
+														<div class="option-icon credit-card-icon"></div>
+														<div class="option-text">
+															<span class="option-title">Credit Card</span>
+															<span class="option-description">Pay with Visa, Mastercard, etc.</span>
+														</div>
+													</div>
+												</label>
+											</div>
+										</div>
+
+										<div id="credit-card-form" class="payment-form hidden">
+											<div class="form-group">
+												<label for="card-number">Card Number</label>
+												<div class="card-input-wrapper">
+													<input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+													<div id="card-brand-icon" class="card-brand-icon"></div>
+												</div>
+												<div id="card-type" class="card-type-message"></div>
+											</div>
+
+											<div class="form-row">
+												<div class="form-group half">
+													<label for="expiry-date">Expiry Date</label>
+													<input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5">
+												</div>
+
+												<div class="form-group half">
+													<label for="cvc">CVC</label>
+													<input type="text" id="cvc" placeholder="123" maxlength="4">
+												</div>
+											</div>
+										</div>
+
+										<div id="card-error" class="error-message"></div>
+
+										<!--<div class="form-group"><label>Card Number <span>*</span></label>
+											<input class="input-text " name="card_no" id="card_no" placeholder=""
+												   value="" autocomplete="tel">
+										</div>
+
+
+										<div class="form-group"><label>Month <span>*</span></label>
+											<select id="ExpMonth" name="ExpMonth"
+													class="country_to_state country_select">
+												<option value="">Select a Month …</option>
+											</select>
+										</div>
+
+
+										<div class="form-group"><label>Year <span>*</span></label>
+											<select id="ExpYear" name="ExpYear" class="country_to_state country_select">
+												<option value="">Select a Year …</option>
+											</select>
+										</div>
+
+										<div class="form-group"><label>Card Code (CVC)& <span>*</span></label>
+											<input class="input-text " name="cvv" id="cvv" placeholder="" value=""
+												   autocomplete="tel">
+										</div>-->
+
+									</div>
+								</div><button type="button" id="place_order"
+									class="axil-btn btn-bg-primary checkout-btn">Process to
+									Checkout</button>
+							</div>
+						</div>
+				</div>
+				</form>
+			</div>
+			</div><!-- End Checkout Area -->
+		</main>
+		<div id="foot">
+
+		</div>
+
+		<script src="static/js/modernizr.min.js"></script><!-- jQuery JS -->
+		<script src="static/js/jquery.min.js"></script><!-- Bootstrap JS -->
+		<script src="static/js/popper.min.js"></script>
+		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/slick.min.js"></script>
+		<script src="static/js/js.cookie.js"></script>
+		<script src="static/js/jquery-ui.min.js"></script>
+		<script src="static/js/jquery.countdown.min.js"></script>
+		<script src="static/js/sal.js"></script>
+		<script src="static/js/jquery.magnific-popup.min.js"></script>
+		<script src="static/js/imagesloaded.pkgd.min.js"></script>
+		<script src="static/js/isotope.pkgd.min.js"></script>
+		<script src="static/js/counterup.js"></script>
+		<script src="static/js/waypoints.min.js"></script><!-- Main JS -->
+		<script src="static/js/main.js"></script>
+
+
+		<script src="static/js/jquery.toast.js"></script>
+		<script src="static/ajaxJs/js/cart.js" type="module"></script>
+		<script src="static/ajaxJs/js/head.js" type="module"></script>
+		<script src="static/ajaxJs/js/checkout.js" type="module"></script>
+		<script src="static/ajaxJs/common/region-verify.js" type="module"></script>
+
+
+
+	</body>
+</html>

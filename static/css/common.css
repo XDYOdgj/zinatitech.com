@@ -1,0 +1,309 @@
+/* 小手 */
+.cursor-pointer {
+	cursor: pointer;
+}
+
+/*logo大小*/
+
+@media (max-width: 575px) {
+	.logo {
+		width: 100%;
+	}
+
+	.footer-logo {
+		width: 60%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.logo {
+		width: 140px;
+	}
+
+	.footer-logo {
+		width: 60%;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.logo {
+		width: 140px;
+	}
+
+	.footer-logo {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1499px) {
+	.logo {
+		width: 160px;
+	}
+
+	.footer-logo {
+		width: 60%;
+	}
+}
+
+@media (min-width: 1500px) {
+	.logo {
+		width: 160px;
+	}
+
+	.footer-logo {
+		width: 60%;
+	}
+}
+
+/* 分页条 */
+ 
+ 
+ @media only screen and (max-width: 767px) {
+ 	.pro-pagination-style.mt-20 {
+ 		margin-top: 10px;
+ 	}
+ }
+ 
+ .pro-pagination-style ul li {
+ 	display: inline-block;
+ 	margin: 0 4px;
+ }
+ 
+ .pro-pagination-style ul li a {
+ 	display: inline-block;
+ 	width: 40px;
+ 	height: 40px;
+ 	text-align: center;
+ 	line-height: 40px;
+ 	font-size: 14px;
+ 	border-radius: 100%;
+ 	color: #e32222;
+ 	-webkit-box-shadow: 0 0px 12px 0.8px rgba(0, 0, 0, 0.1);
+ 	box-shadow: 0 0px 12px 0.8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .pro-pagination-style ul li a:hover {
+ 	background-color: #333;
+ 	color: #fff; 
+	cursor: pointer;
+ }
+ 
+ .pro-pagination-style ul li a.active {
+ 	background-color: #e32222;
+ 	color: #fff;
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ }
+ 
+ .pro-pagination-style ul li a.active:hover {
+ 
+ }
+ 
+ .pro-pagination-style ul li a.prev,
+ .pro-pagination-style ul li a.next {
+ 	background-color: #f6f6f6;
+ 	color: #e32222;
+ 	font-size: 17px;
+ 	-webkit-box-shadow: none;
+ 	box-shadow: none;
+ }
+ 
+ .pro-pagination-style ul li a.prev:hover,
+ .pro-pagination-style ul li a.next:hover {
+ 	background-color: #e32222;
+ 	color: #fff;
+ }
+ 
+ 
+
+/* 省略号 */
+.ellipsis-omit {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ellipsis-multiline2 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*加载动画*/
+.loading-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999999;
+}
+
+.circle-container {
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.circle {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 2px solid #2196f3;
+	animation: rotate-circle 3s infinite linear;
+}
+
+.dot {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-color: #82b1ff;
+	border-radius: 50%;
+	top: -7.5px;
+	left: 42.5px;
+	animation: flash-dot 1s infinite ease-in-out alternate;
+}
+
+.dot:nth-child(2) {
+	animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+	animation-delay: 0.6s;
+}
+
+.dot:nth-child(4) {
+	animation-delay: 0.9s;
+}
+
+.loading-text {
+	margin-top: 30px;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #82b1ff;
+}
+
+@keyframes rotate-circle {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes flash-dot {
+	0% {
+		opacity: 0.1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* 下拉搜索框 */
+.bill_state_iop,
+.bill_country_iop,
+.bill_city_iop,
+.ship_state_iop,
+.ship_country_iop,
+.ship_city_iop {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+
+.iop {
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.iop:hover {
+	background-color: #ebebeb;
+}
+
+.bill_state_iop-list,
+.bill_country_iop-list,
+.bill_city_iop-list,
+.ship_state_iop-list,
+.ship_country_iop-list,
+.ship_city_iop-list {
+	border: solid 1px #ebebeb;
+	width: 100%;
+	height: 180px;
+	overflow-y: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	transform: translateY(0px);
+}
+
+.select-hidden {
+	display: none;
+}
+
+
+/* 评论列表 */
+.single-review>.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.single-review>.space-between>.name {
+	font-size: 20px;
+}
+
+.single-review>.space-between>.specifications {
+	flex: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 20px;
+	/* text-align: right; */
+}
+
+.single-review>.comment {
+	color: #999;
+	padding: 10px 0;
+}
+
+.single-review  {
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+
+.single-review:last-child {
+	border-bottom: none;
+}
+
+
+/* 加载动画 */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spin {
+	animation: spin 1s linear infinite;
+}
